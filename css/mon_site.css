@@ -338,10 +338,24 @@ template {
   width: 70px;
 }
 
+.hamburger-menu:active + ul {
+  display: initial;
+}
+
+#hamburger-input {
+  display: none;
+}
+
+#hamburger-input:checked + ul {
+  display: block;
+  background-color: red;
+}
+
 .navbar ul {
   margin-top: 15px;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
+  display: none;
 }
 
 .navbar ul li {
@@ -354,7 +368,7 @@ template {
 }
 
 .navbar ul li:hover {
-  background-color: #000000;
+  background-color: #264669;
 }
 
 .navbar ul li a {
@@ -369,8 +383,8 @@ template {
     background-color: #0b141e;
   }
   .navbar ul {
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-flexbox !important;
+    display: flex !important;
     margin-top: 0;
     -ms-flex-pack: end;
         justify-content: flex-end;
@@ -378,11 +392,21 @@ template {
   .navbar ul li {
     border: none;
     background-color: transparent;
-    width: 130px;
+    width: 200px;
+    padding-left: 10px;
+    text-align: center;
   }
   .hamburger-menu {
     display: none;
   }
+}
+
+img {
+  width: 100%;
+}
+
+.titre {
+  text-align: center;
 }
 
 /*# sourceMappingURL=mon_site.css.map */

@@ -6,19 +6,6 @@ $breakpoint-1:650px;
     width:70px;
 }
 
-.hamburger-menu:active + ul{
-    display:initial;
-}
-
-#hamburger-input{
-    display:none;
-}
-
-#hamburger-input:checked + ul{
-    display:block;
-    background-color:red;
-}
-
 .navbar ul{
     margin-top:15px;
     padding-inline-start: 0px;
